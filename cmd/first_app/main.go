@@ -1,10 +1,10 @@
 package main
 
 import (
+	"goapp1/utils/lib"
 	"fmt"
 	"os"
 	"strings"
-	"utils/lib"
 )
 
 func main() {
