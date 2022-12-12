@@ -22,7 +22,7 @@ func main() {
 	for i := 0; i < len(splitStrings); i++ {
         println(splitStrings[i])
 	}
-    test := con.Exclamation
+    test := lib.Exclamation
     println("This:", test, "WHAT'S UP")
 
 }
