@@ -20,7 +20,7 @@ func main() {
 
 	// fmt.Println(count)
 
-	f, err := os.ReadFile("data.txt")
+	f, err := os.ReadFile("data/data.txt")
 	splitStrings := strings.Split(string(f), "\n")
 	// formattedString, test, test2 := strings.Cut(string(f), "\n")
 
