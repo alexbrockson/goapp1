@@ -25,8 +25,8 @@ func main() {
 	test := lib.Exclamation
 	println("This:", test, "WHAT'S UP")
 
-	sum(1, 3, 4, 3, 5)
-	lib.Sum(1, 3, 4, 3, 5)
+	//sum(1, 3, 4, 3, 5)
+	println(lib.Sum(1, 3, 4, 3, 5))
 
 }
 
