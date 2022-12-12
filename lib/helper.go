@@ -12,3 +12,11 @@ func Sum(values ...int) int {
 	}
 	return result
 }
+
+func Divide(a, b float64) (float64, error) {
+	// fmt.Println(a, "/", b)
+	if b == 0.0 {
+		return 0.0, fmt.Errorf("cannot divide by zero")
+	}
+	return a / b, nil
+}
