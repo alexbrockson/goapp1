@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 	"strings"
-	"utils/controllers"
+	"utils/lib"
 )
 
 func main() {
@@ -35,6 +35,6 @@ func main() {
 		// fmt.Println(test2)
 	}
     test := variables.Exclamation
-    println(test)
+    println("This:", test, "WHAT'S UP")
 
 }
