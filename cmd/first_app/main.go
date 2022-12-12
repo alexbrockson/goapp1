@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"strings"
+    "strconv"
 )
 
 func main() {
@@ -20,7 +21,11 @@ func main() {
 
     println("Number of words:", len(splitStrings))
 	for i := 0; i < len(splitStrings); i++ {
-        println(splitStrings[i])
+        line := strings.Split(splitStrings[i], "=") 
+        nums, err := strconv.Atoi(strings.TrimSpace(line[1]))
+        if err == nil {
+            fmt.Println(nums * lib.DELTA)
+        }
 	}
     test := lib.Exclamation
     println("This:", test, "WHAT'S UP")
