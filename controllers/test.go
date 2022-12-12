@@ -1,3 +1,3 @@
-package main
+package variables
 
 var Exclamation string = "YO"

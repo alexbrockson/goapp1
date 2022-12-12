@@ -4,8 +4,7 @@ import (
 	"fmt"
 	"os"
 	"strings"
-	// "goapp1/test"
-	// "controllers/test"
+	"utils/controllers"
 )
 
 func main() {
@@ -35,5 +34,7 @@ func main() {
 		// fmt.Println(string(test))
 		// fmt.Println(test2)
 	}
+    test := variables.Exclamation
+    println(test)
 
 }
