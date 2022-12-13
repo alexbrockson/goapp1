@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
+	"goapp1/utils/lib"
 	"os"
+	"strconv"
 	"strings"
-	"utils/lib"
 )
 
 func main() {
@@ -18,11 +19,20 @@ func main() {
 		println(err)
 		return
 	}
+	names := make([]string, 0)
+	values := make([]int, 0)
 
 	println("Number of words:", len(splitStrings))
 	for i := 0; i < len(splitStrings); i++ {
-		println(splitStrings[i])
+		line := strings.Split(splitStrings[i], "=")
+		name := strings.TrimSpace(line[0])
+		names = append(names, name)
+		nums, err := strconv.Atoi(strings.TrimSpace(line[1]))
+		if err == nil {
+			values = append(values, nums)
+		}
 	}
+	fmt.Println(names, values)
 	test := lib.Exclamation
 	println("This:", test, "WHAT'S UP")
 
